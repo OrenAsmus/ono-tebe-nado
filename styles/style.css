@@ -7,13 +7,28 @@
     height: 105px;
     margin: auto;
     padding: 0;
-    margin-top: 92px;
+    margin-top: 92px; 
+    margin-bottom: 96px;
 }
 .header__links-list{
     display: flex;
     gap: 30px;
     list-style-type: circle ;
+    margin-top: 39px;
 }
+.header__links-list-item{
+   font-family: Raleway;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 21px;
+   text-decoration: underline;
+}
+
+.header__links-list-item:nth-child(1) {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 .header__logo {
     background-image: url("../images/logo-black.svg");
     background-repeat: no-repeat;
@@ -29,4 +44,278 @@
 }
 .header__links-list-item{
     margin-top: 0px;
+}
+.cover{
+    position: relative;
+    height: 757px;
+    width: 1100px;
+    background-image: url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: right center ;
+    background-size: cover;
+    
+}
+.cover__title{
+    width: 100%;
+    color: #fff;
+    font-family: Raleway sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1;
+    padding-top: 165px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-transform: uppercase;
+}
+.accent-span {
+    display: block;
+    font-size: 100px;
+}
+.text-center {
+text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.overlay{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / .5);
+    z-index: 1;
+
+}
+.cover__description{
+    width: 100%;
+   display: flex;  
+   flex-direction: row nowrap;
+   justify-content: space-between;
+   align-items: center;
+
+   margin-top: 147px;
+   margin-bottom: 62px;
+}
+.cover__description-text{
+    font-family: raleway sans-serif;
+    margin-left: 28px;
+    margin-top: 147px;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    text-transform: uppercase;
+}
+.bet-button{
+    width: 256px;   
+    height: 52px;
+    gap: 10px;
+    font-family: raleway sans-serif;
+    font-size: 22px;
+    color: #fff;
+    border: 1px solid;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: transparent;
+    /* margin-right: 82px;
+    margin-top: 135px; */
+
+    margin-right: 50px
+}
+.lots{
+    margin-top: 179px;
+    width: 1052px;
+    height: 692px;
+    margin: 179px auto 0;
+    
+}
+.lots__heading{
+    margin-bottom: 27px;
+    weight: 700;
+    size: 40px;
+    text-transform: uppercase;
+    
+}
+.lots__card-list{
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.list{
+    display:flex;
+    flex-direction: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 637px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: raleway sans-serif;
+    text-decoration: rgba(255, 255, 255, 1);
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 78px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 563px;
+    width: 334px;
+}
+
+.card_type_film {
+    background-image: url("../images/card-lot-01.jpg");
+}
+.card_type_book {
+    background-image: url("../images/card-lot-02.jpg");
+}
+.card_type_picture {
+    background-image: url("../images/card-lot-03.jpg");
+}
+.card__title{
+   margin-top: 51px ;
+   text-decoration: underline;
+   color: rgba(255, 255, 255, 1);
+   font-family: Raleway;
+   font-size: 22px;
+   font-weight: 700;
+   line-height: 26px;
+   letter-spacing: 0em;
+   text-align: left;
+   width: 254px;        
+   height: 82px;
+   margin-left: 40px;
+   margin-right: 40px;
+
+}
+.card__text{
+   color: rgba(255, 255, 255, 1);
+   font-family: Raleway;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0em;
+   text-align: left;
+   margin-top:auto;
+   margin-left: 40px;
+   margin-right: 40px;
+}
+.lots__look-more-link{
+   font-family: Raleway;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 23px;
+   text-decoration: underline;
+   margin-top: 30px;
+
+}
+.about{
+    width: 1052px;
+    height: 595px;
+    margin-left: 24px;
+    margin-right:24px;
+}
+.about__column{
+    display: flex;
+    flex-direction: row nowrap;
+    height: 100%;
+}
+.about__logo{
+    width: 334px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.about__logo-image{
+    width: 240px;
+    height: 240px;
+    margin-top: 35px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about__logo_svg{
+    width: 148px;
+    height: 114px;
+    background-repeat: no-repeat;
+    background-image: url("../images/logo-white.svg");
+}
+
+/* .about__logo-image{
+    width: 718px;
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+} */
+.about__title{
+    margin-top:133px;
+    width: 718px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.about__title-headline{
+    color: rgba(0, 0, 0, 1);
+    font-family: Raleway;
+   font-size: 40px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+.about__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Raleway;
+   font-size: 20px;
+   font-weight: 400;
+   height: 312px;
+}
+.footer{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 180px;
+    margin-bottom: 88px;
+}
+.footer__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: Raleway;
+    color:rgba(0, 0, 0, 1);
+   font-size: 18px;
+   font-weight: 400;
+   
+}
+.footer__social-list{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 240px;
+}
+
+.footer__social-list-item-yt {
+    width: 48px;
+    height: 48px;
+    background-image: url("../images/yt.svg");
+}
+.footer__social-list-item-vk {
+    width: 48px;
+    height: 48px;
+    background-image: url("../images/vk.svg");
+}
+.footer__social-list-item-printerest {
+    width: 48px;
+    height: 48px;
+    background-image: url("../images/pinterest.svg");
 }
