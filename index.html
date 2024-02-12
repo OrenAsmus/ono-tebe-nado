@@ -36,29 +36,31 @@
     <main class="main">
       <section class="cover">
         <div class="overlay"></div>
-          <h1 class="cover__title">
-            о<span class="cover_title_spacing">но</span>
-            <span class="aligned-text aligned-text_center"
-              >те<span class="cover_title_spacing">бе</span></span
-            >
-            <span class="aligned-text aligned-text_right"
-              ><span class="cover_title_spacing">н</span>ад<span
-                class="no-letter-spacing"
-                >о</span
-              ></span
-            >
-          </h1>
-          <div class="cover__description">
-            <p class="list_item">Аукцион вещей, в которые никто не верил</p>
-            <button type="submit" class="bet-button">Сделать ставку</button>
-          </div>
-        
+        <h1 class="cover__title">
+          <span class="cover_text"
+            >о<span class="cover_title_spacing">но</span></span
+          >
+          <span class="aligned-text aligned-text_center cover_text"
+            >те<span class="cover_title_spacing">бе</span></span
+          >
+          <span class="aligned-text aligned-text_right cover_text cover_text"
+            ><span class="cover_title_spacing">н</span>ад<span
+              class="no-letter-spacing"
+              >о</span
+            ></span
+          >
+        </h1>
+        <div class="cover__description">
+          <p class="list_item">Аукцион вещей, в которые никто не верил</p>
+          <button type="submit" class="bet-button">Сделать ставку</button>
+        </div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">лоты</h2>
-        <li class="lots__card-list-item card_type_film">
-          <a class="card-link">
-            <div class="overlay"></div>
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item card_type_film">
+            <a class="card-link">
+              <div class="overlay"></div>
               <article class="card-link_position">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
@@ -69,12 +71,11 @@
                   Андерсон?
                 </p>
               </article>
-            
-          </a>
-        </li>
-        <li class="lots__card-list-item card_type_book">
-          <a class="card-link">
-            <div class="overlay"></div>
+            </a>
+          </li>
+          <li class="lots__card-list-item card_type_book">
+            <a class="card-link">
+              <div class="overlay"></div>
               <article class="card-link_position">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
@@ -88,12 +89,12 @@
                   Джеймса Джойса?
                 </p>
               </article>
-            
-          </a>
-        </li>
-        <li class="lots__card-list-item card_type_picture">
-          <a class="card-link">
-            <div class="overlay"></div>
+            </a>
+          </li>
+
+          <li class="lots__card-list-item card_type_picture">
+            <a class="card-link">
+              <div class="overlay"></div>
               <article class="card-link_position">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
@@ -105,8 +106,9 @@
                   что это — одна из революционных работ Кандинского?
                 </p>
               </article>
-          </a>
-        </li>
+            </a>
+          </li>
+        </ul>
         <a href="#" class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about">
@@ -151,7 +153,7 @@
         </p>
       </address>
       <nav>
-        <ul class="links-list footer_links-list" >
+        <ul class="links-list footer_links-list">
           <li class="links-list-item">
             <a class="links-list-target first_item" href="#">главная</a>
           </li>
@@ -164,9 +166,24 @@
         </ul>
       </nav>
       <div class="footer__social-list">
-        <img class="footer__social-list-item" src="./images/yt.svg"></img>
-        <img class="footer__social-list-item" src="./images/vk.svg"></img>
-        <img class="footer__social-list-item" src="./images/pinterest.svg"></img>
+        <a href="#"
+          ><img
+            class="footer__social-list-item"
+            src="./images/yt.svg"
+            alt="ссылка на yt"
+        /></a>
+        <a href="#"
+          ><img
+            class="footer__social-list-item"
+            src="./images/vk.svg"
+            alt="ссылка на vk"
+        /></a>
+        <a href="#"
+          ><img
+            class="footer__social-list-item"
+            src="./images/pinterest.svg"
+            alt="ссылка на pinterest"
+        /></a>
       </div>
     </footer>
   </body>
